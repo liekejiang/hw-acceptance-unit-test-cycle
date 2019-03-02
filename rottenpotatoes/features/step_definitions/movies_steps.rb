@@ -1,3 +1,8 @@
+Then /^the director of "(.+)" should be "(.+)"/ do |movie_name, director|
+  movie = Movie.find_by(title: movie_name)
+  expect(movie.director).to eql(director)
+end
+
 
 Given /the following movies exist/ do |movies_table|
   movies_table.hashes.each do |movie|
