@@ -2,7 +2,7 @@ ruby '2.4.0'
 gem 'rails', '4.2.10'
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
-
+gem 'pg', '~> 0.20'
 # for Heroku deployment - as described in Ap. A of ELLS book
 group :development, :test do
 #  gem 'sqlite3' 
@@ -32,7 +32,7 @@ gem 'uglifier', '>= 2.7.1'
 
 gem 'jquery-rails'
 gem 'haml'
-gem 'pg', '~> 0.20'
+
 
 # Use unicorn as the web server
 # gem 'unicorn'
